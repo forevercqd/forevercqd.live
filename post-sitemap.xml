@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>http://www.huweihuang.com/article/2019-06-30-git%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</loc>
+        <lastmod>2019-07-19T12:47:34.194Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://www.huweihuang.com/article/Camera2%E6%96%B0%E7%89%B9%E6%80%A7/</loc>
         <lastmod>2019-07-19T12:35:25.981Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -34,14 +42,6 @@
     <url>
         <loc>http://www.huweihuang.com/article/hexo-theme-huweihuang/</loc>
         <lastmod>2019-07-19T12:13:18.504Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://www.huweihuang.com/article/2019-06-30-git%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</loc>
-        <lastmod>2019-07-19T12:13:18.502Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
