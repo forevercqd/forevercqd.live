@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          Camera2 广角计算 - forevercqd | Blog
+          forevercqd | Blog
         
     </title>
 
-    <link rel="canonical" href="http://www.huweihuang.com/article/Camera2-广角计算/">
+    <link rel="canonical" href="http://www.huweihuang.com/tags/git/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -71,8 +71,8 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('/img/article_header/article_bg.jpg')
-            /*post*/
+            background-image: url('/img/header_img/archives-widget.jpg')
+            /*page*/
         
     }
     
@@ -85,18 +85,10 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 
-                    <div class="post-heading">
-                        <div class="tags">
-                            
-                              <a class="tag" href="/tags/#Camera2" title="Camera2">Camera2</a>
-                            
-                        </div>
-                        <h1>Camera2 广角计算</h1>
-                        <h2 class="subheading"></h2>
-                        <span class="meta">
-                            Posted by forevercqd on
-                            2019-07-19
-                        </span>
+                    <div class="site-heading">
+                        <h1>forevercqd</h1>
+                        <!--<hr class="small">-->
+                        <span class="subheading">个人博客</span>
                     </div>
                 
 
@@ -199,187 +191,289 @@
 
 
     <!-- Main Content -->
-    <!-- Modify by Yu-Hsuan Yen -->
+    <!-- Main Content -->
+<div class="container">
+    <div class="row">
+        
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-
-            <!-- Post Container -->
+<!-- USE SIDEBAR -->
+    <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
-
-                <h1><span id="camera2-广角计算">Camera2 广角计算</span></h1>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public void calculateSensorAngle(CameraCharacteristics cc, String cameraID) &#123;</span><br><span class="line">    // 获取摄像头广角角度</span><br><span class="line">    SizeF sensorSize = cc.get(CameraCharacteristics.SENSOR_INFO_PHYSICAL_SIZE);</span><br><span class="line">    float[] focalLengths = cc.get(CameraCharacteristics.LENS_INFO_AVAILABLE_FOCAL_LENGTHS);</span><br><span class="line"></span><br><span class="line">    float w = sensorSize.getWidth();</span><br><span class="line">    float h = sensorSize.getHeight();</span><br><span class="line">    Log.d(TAG, &quot;calculateSensorAngle, Camera &quot; + cameraID + &quot; has sensorSize == &quot; + Float.toString(2.0f * w) + &quot;, &quot; + Float.toString(2.0f * h));</span><br><span class="line">    for (int focusId = 0; focusId &lt; focalLengths.length; focusId++) &#123;</span><br><span class="line">        float focalLength = focalLengths[focusId];</span><br><span class="line">        float horizonalAngle = (float) Math.toDegrees(2 * Math.atan(w / focalLength));</span><br><span class="line">        float verticalAngle = (float) Math.toDegrees(2 * Math.atan(h / focalLength));</span><br><span class="line">        Log.d(TAG, &quot;calculateSensorAngle, Camera &quot; + cameraID + &quot;/f&quot; + focusId + &quot; has focalLength == &quot; + Float.toString(focalLength));</span><br><span class="line">        Log.d(TAG, &quot;calculateSensorAngle, horizonalAngle = &quot; + Float.toString(horizonalAngle) + &quot;, verticalAngle = &quot; + Float.toString(verticalAngle));</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                post-container
+            ">
+            
                 
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 archive">
+            <!-- 归档列表 -->
+            
+            
 
-                <hr>
-                <!-- Pager -->
-                <ul class="pager">
-                    
-                    
-                        <li class="next">
-                            <a href="/article/github-blog教程/" data-toggle="tooltip" data-placement="top" title="github blog教程">Next Post &rarr;</a>
-                        </li>
-                    
+             <!-- 归档列表 -->
+
+            
+            <div class="one-tag-list">
+                <span class="fa fa-calendar-times-o listing-seperator" id="2019">
+                    <span class="tag-text">2019</span>
+                </span>
+                <ul>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <li >
+                    07-19
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <a href="/article/Camera2-广角计算/" style="color: #0085a1">
+                        <span>
+                            Camera2 广角计算
+                        </span>
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </li>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <li >
+                    07-19
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <a href="/article/github-blog教程/" style="color: #0085a1">
+                        <span>
+                            github blog教程
+                        </span>
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </li>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <li >
+                    06-30
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <a href="/article/2019-06-30-git命令总结/" style="color: #0085a1">
+                        <span>
+                            git 常用命令
+                        </span>
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </li>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <li >
+                    06-30
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <a href="/article/2019-06-29-vim正则表达式/" style="color: #0085a1">
+                        <span>
+                            vim　正则表达式
+                        </span>
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </li>
+                
                 </ul>
-
-                <br>
-
-                <!--打赏-->
-                
-                <!--打赏-->
-
-                <br>
-                <!--分享-->
-                
-                    <div class="social-share"  data-wechat-qrcode-helper="" align="center"></div>
-                    <!--  css & js -->
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
-                
-                <!--分享-->
-                <br>                       
-                
-                <!-- require APlayer -->
-                
-
-                <!-- duoshuo Share start -->
-                
-                <!-- 多说 Share end-->
-
-                <!-- 多说评论框 start -->
-                
-                <!-- 多说评论框 end -->
-
-                <!-- disqus comment start -->
-                
-                <!-- disqus comment end -->
-
-                
-
             </div>
             
-            <!-- Tabe of Content -->
-            <!-- Table of Contents -->
-
-  
-    <style>
-      span.toc-nav-number{
-        display: none
-      }
-    </style>
-  
-    
-      <aside id="sidebar">
-        <div id="toc" class="toc-article">
-        <strong class="toc-title">Contents</strong>
-        
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Camera2 广角计算</span></a></li></ol>
-        
-        </div>
-      </aside>
-    
-
+            <div class="one-tag-list">
+                <span class="fa fa-calendar-times-o listing-seperator" id="2017">
+                    <span class="tag-text">2017</span>
+                </span>
+                <ul>
                 
-            <!-- Sidebar Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                <!-- Featured Tags -->
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <li >
+                    09-18
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <a href="/article/hexo-theme-huweihuang/" style="color: #0085a1">
+                        <span>
+                            [Hexo] Theme HuWeihuang
+                        </span>
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </li>
                 
-                <section>
-                    <!-- no hr -->
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-                    <div class="tags">
-                       
-                          <a class="tag" href="/tags/#Camera2" title="Camera2">Camera2</a>
-                        
-                    </div>
-                </section>
-                
-
-                <!-- Friends Blog -->
-                
-                <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
-
-                    
-                        <li><a href="https://yq.aliyun.com/u/huweihuang" target="_blank">阿里云栖社区 胡伟煌</a></li>
-                    
                 </ul>
-                
             </div>
+            
+
+
         </div>
     </div>
-</article>
+</div>
 
+<style type="text/css">
 
+   @media (min-width: 992px) {
+   .archive {
+       margin-left: 8.33333333%;
+       padding-right: 26.333333%;
+   }
+}
+</style>
 
-
-
-
-
-
-<!-- async load function -->
-<script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
-</script>
-<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
-<script>
-    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
-        anchors.options = {
-          visible: 'hover',
-          placement: 'left',
-          icon: 'ℬ'
-        };
-        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
-    })
-</script>
-<style>
-    /* place left on bigger screen */
-    @media all and (min-width: 800px) {
-        .anchorjs-link{
-            position: absolute;
-            left: -0.75em;
-            font-size: 1.1em;
-            margin-top : -0.1em;
-        }
-    }
+<style type="text/css">
+   @media (min-width: 1200px){
+   .archive {
+   margin-left: 16.66666667%;
+   padding-right: 16.666667%;
+   }
+}
 </style>
 
 
-<!-- chrome Firefox 中文锚点定位失效-->
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
-<!-- smooth scroll behavior polyfill  -->
-<script type="text/javascript" src="/js/smoothscroll.js"></script>
-<script>
-        $('#toc').on('click','a',function(a){
-            // var isChrome = window.navigator.userAgent.indexOf("Chrome") !== -1;
-            // console.log(window.navigator.userAgent,isChrome)
-                // if(isChrome) {
-                    // console.log(a.currentTarget.outerHTML);
-                    // console.log($(a.currentTarget).attr("href"));
-                    //跳转到指定锚点
-                    // document.getElementById(a.target.innerText.toLowerCase()).scrollIntoView(true);
-                    document.getElementById($(a.currentTarget).attr("href").replace("#","")).scrollIntoView({behavior: 'smooth' });
-                // }
-        })  
-</script>
+                <br>
+
+                <!-- require APlayer -->
+                
+
+                <!-- 如果开启评论功能 -->
+                
+            </div>
+
+          <!-- Sidebar Container -->
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+        <!-- Featured Tags -->
+
+<section>
+    <!-- no hr -->
+    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+    <div class="tags">
+        
+            
+            <a href="/tags/#vim" title="vim" rel="2">vim</a>
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+</section>
+
+        <hr>
+    
+        <!-- Short About -->
+<section class="visible-md visible-lg">
+    <h5><a href="/about/">ABOUT ME</a></h5>
+    <div class="short-about">
+
+        
+            <img id = "avatar_pic" src="/img/avatar/ironman.png" />
+        
+
+        
+            <p>Stay hungry,Stay foolish</p>
+        
+
+        <!-- SNS Link -->
+        <ul class="list-inline">
+            
+            
+            
+
+            
+
+            
+
+            
+                <li>
+                    <a target="_blank"  href="https://github.com/forevercqd">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            
+            
+            
+            
+        </ul>
+    </div>
+</section>
+
+        <hr>
+    
+        
+  <h5>RECENT POSTS</h3>
+  <div class="widget">
+    <ul>
+      
+        <li>
+          <a href="/article/Camera2-广角计算/">Camera2 广角计算</a>
+        </li>
+      
+        <li>
+          <a href="/article/github-blog教程/">github blog教程</a>
+        </li>
+      
+        <li>
+          <a href="/article/2019-06-29-vim正则表达式/">vim　正则表达式</a>
+        </li>
+      
+        <li>
+          <a href="/article/2019-06-30-git命令总结/">git 常用命令</a>
+        </li>
+      
+        <li>
+          <a href="/article/hexo-theme-huweihuang/">[Hexo] Theme HuWeihuang</a>
+        </li>
+      
+    </ul>
+  </div>
+
+        <hr>
+    
+        <!-- Friends Blog -->
+
+<h5>FRIENDS</h5>
+<ul class="list-inline">
+
+    
+        <li><a href="https://yq.aliyun.com/u/huweihuang" target="_blank">阿里云栖社区 胡伟煌</a></li>
+    
+</ul>
+
+        <hr>
+    
+        
+    <h5>ARCHIVES</h5>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+
+        <hr>
+    
+</div>
+
+        
+    </div>
+</div>
 
 
     <!-- Footer -->
