@@ -3,8 +3,15 @@
 
 
     <url>
+        <loc>http://www.huweihuang.com/tags/android/</loc>
+        <lastmod>2019-08-08T10:51:27.661Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://www.huweihuang.com/tags/git/</loc>
-        <lastmod>2019-07-19T12:47:34.194Z</lastmod>
+        <lastmod>2019-08-08T10:42:11.801Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
