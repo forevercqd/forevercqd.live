@@ -211,7 +211,7 @@
 
 <div class="post-preview">
 
-    <a href="/article/2019-06-29-vim正则表达式/">
+    <a href="/article/webrtc调试/">
         <h2 class="post-title">
             
                 <i class="fa fa-thumb-tack" style="color:#F4711F" ></i>
@@ -221,36 +221,103 @@
                 <!-- <font color=#F89E8C>置顶</font>  -->
                 <!-- <font color=#1CB7ED>置顶</font>  -->
                                  
-            vim　正则表达式
+            webrtc调试
         </h2>
         <h3 class="post-subtitle">
             
         </h3>
         <div class="post-content-preview">
-            vim　正则表达式
-
-删除指定字符&quot;abc&quot;前的所有内容
-
-1:%s/^.*\(abc.*\)/\1/g
-
-删除所有空行
-
-1:g/^\s*$/d
-
-删除行首指定数量的字符
-
-1:%s/^.\&#123;9\&#125;//g
-...
+            编译 webrtc 时添加编译参数　--args=‘is_debug=true enable_stripping=false enable_dsyms=true’　即可，如下
+1gn gen out/Debug --ide=xcode --args=&apos;is_debug=true enable_stripping=false enable_dsyms=true&apos; --mac......
         </div>
     </a>
     
         <p class="post-meta" style="margin: 10px 0;">
             Posted by forevercqd on
-            2019-06-30
+            2019-10-16
         </p>
         <div class="tags">
             
-              <a href="/tags/#vim" title="vim">vim</a>
+              <a href="/tags/#webRTC" title="webRTC">webRTC</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/article/camera2基本框架/">
+        <h2 class="post-title">
+            
+                <i class="fa fa-thumb-tack" style="color:#F4711F" ></i>
+                <!-- <i class="fa fa-thumb-tack" style="color:#F89E8C" ></i> -->
+                <!-- <i class="fa fa-thumb-tack" style="color:#1CB7ED" ></i> -->
+                <font color=#F4711F>置顶</font>
+                <!-- <font color=#F89E8C>置顶</font>  -->
+                <!-- <font color=#1CB7ED>置顶</font>  -->
+                                 
+            camera2基本框架
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            重新组织语言
+•CameraManager ：摄像头管理器，主要用于检测系统摄像头、打开系统摄像头等；
+•CameraDevice : 用于描述系统摄像头，可用于关闭相机、创建相机会话、发送拍照请求等；
+•CameraCharacteristics ：用于描述摄像头所支持的各种特性；
+•CameraCaptureSession ：当程序需要预览、拍照时，都需要先通过 CameraCaptur......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by forevercqd on
+            2019-08-11
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#Camera2" title="Camera2">Camera2</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/article/Camera2新特性/">
+        <h2 class="post-title">
+            
+                <i class="fa fa-thumb-tack" style="color:#F4711F" ></i>
+                <!-- <i class="fa fa-thumb-tack" style="color:#F89E8C" ></i> -->
+                <!-- <i class="fa fa-thumb-tack" style="color:#1CB7ED" ></i> -->
+                <font color=#F4711F>置顶</font>
+                <!-- <font color=#F89E8C>置顶</font>  -->
+                <!-- <font color=#1CB7ED>置顶</font>  -->
+                                 
+            Camera2新特性
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            Camera2 新特性
+从 Android 5.0 开始，Google 引入了一套全新的相机框架 Camera2（android.hardware.camera2），并且废弃了旧的相机框架 Camera1(android.hardware.Camera)，其目的是配合Camera HAL3，同时赋予应用层更多更灵活的相机控制权限，从而构建出更高质量的相机应用程序。
+更先进灵活的API架构
+原......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by forevercqd on
+            2019-07-19
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#Camera2" title="Camera2">Camera2</a>
             
         </div>
     
@@ -303,6 +370,89 @@ git tag -l......
 
 <div class="post-preview">
 
+    <a href="/article/2019-06-29-vim正则表达式/">
+        <h2 class="post-title">
+            
+                <i class="fa fa-thumb-tack" style="color:#F4711F" ></i>
+                <!-- <i class="fa fa-thumb-tack" style="color:#F89E8C" ></i> -->
+                <!-- <i class="fa fa-thumb-tack" style="color:#1CB7ED" ></i> -->
+                <font color=#F4711F>置顶</font>
+                <!-- <font color=#F89E8C>置顶</font>  -->
+                <!-- <font color=#1CB7ED>置顶</font>  -->
+                                 
+            vim　正则表达式
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            vim　正则表达式
+
+删除指定字符&quot;abc&quot;前的所有内容
+
+1:%s/^.*\(abc.*\)/\1/g
+
+删除所有空行
+
+1:g/^\s*$/d
+
+删除行首指定数量的字符
+
+1:%s/^.\&#123;9\&#125;//g
+...
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by forevercqd on
+            2019-06-30
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#vim" title="vim">vim</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/article/Cpp模板/">
+        <h2 class="post-title">
+                                 
+            Cpp模板
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            待搞清楚的内容
+
+C++ 中的 typename 及 class 关键字的区别
+
+下图依次解释了模板形参、模板函数形参、模板实参、模板函数实参;
+
+如&quot;typename T&quot; 中T即为模板形参, &quot;T Max(T&amp; a T&amp; b)&quot;中的“a, b”即为模板函数形参;
+1234template &lt;typename T&gt;T Ma......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by forevercqd on
+            2019-09-03
+        </p>
+        <div class="tags">
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
     <a href="/article/android-studio-mac-eclipse－快捷键/">
         <h2 class="post-title">
                                  
@@ -339,33 +489,6 @@ parameter info: 函数输入参数提示 command + p;
         <div class="tags">
             
               <a href="/tags/#android" title="android">android</a>
-            
-        </div>
-    
-
-</div>
-<hr>
-
-<div class="post-preview">
-
-    <a href="/article/Camera2新特性/">
-        <h2 class="post-title">
-                                 
-            Camera2新特性
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-            ...
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by forevercqd on
-            2019-07-19
-        </p>
-        <div class="tags">
             
         </div>
     
@@ -514,11 +637,15 @@ Install Node.js  and Git
     <div class="tags">
         
             
-        
+            <a href="/tags/#Camera2" title="Camera2" rel="3">Camera2</a>
             
         
             
             <a href="/tags/#git" title="git" rel="2">git</a>
+            
+        
+            
+        
             
         
             
@@ -578,23 +705,23 @@ Install Node.js  and Git
     <ul>
       
         <li>
+          <a href="/article/webrtc调试/">webrtc调试</a>
+        </li>
+      
+        <li>
+          <a href="/article/Cpp模板/">Cpp模板</a>
+        </li>
+      
+        <li>
+          <a href="/article/camera2基本框架/">camera2基本框架</a>
+        </li>
+      
+        <li>
           <a href="/article/android-studio-mac-eclipse－快捷键/">android-studio-mac-eclipse－快捷键</a>
         </li>
       
         <li>
           <a href="/article/Camera2新特性/">Camera2新特性</a>
-        </li>
-      
-        <li>
-          <a href="/article/Camera2-广角计算/">Camera2 广角计算</a>
-        </li>
-      
-        <li>
-          <a href="/article/github-blog教程/">github blog教程</a>
-        </li>
-      
-        <li>
-          <a href="/article/2019-06-29-vim正则表达式/">vim　正则表达式</a>
         </li>
       
     </ul>
@@ -617,7 +744,7 @@ Install Node.js  and Git
         
     <h5>ARCHIVES</h5>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">1</span></li></ul>
     </div>
 
         <hr>
